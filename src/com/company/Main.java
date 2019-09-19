@@ -9,7 +9,14 @@ public class Main {
 
         Car c = new Car();
         c.setMake("FoRd");
+
         c.setEngine(new Engine());
+        /*
+        same code as previous line
+        Engine e = new Engine();
+        c.setEngine(e);
+        */
+
         Door door = new Door();
         ArrayList<Door> doors = new ArrayList<>();
         doors.add(door);
@@ -19,7 +26,7 @@ public class Main {
 
         // method chaining allows you to 'drill down' objects and
         // methods. Here we are passing a new unnamed door to the
-        // add method of the cars getDoor method.
+        // add method of the cars getDoor(ArrayList) method.
         System.out.println(c.getDoors().add(new Door()));
 
         // another example of method chaining. The car's

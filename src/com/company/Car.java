@@ -16,6 +16,9 @@ public class Car {
     private Windshield windshield;
 
     public Car() {
+        doors = new ArrayList<Door>();
+        engine = new Engine();
+        windshield = new Windshield();
     }
 
     public Car(String make, String model, int year,
