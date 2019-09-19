@@ -6,4 +6,5 @@ public class Engine
         // this example. The programmer just needs to call
         // the engine class and doesn't care how it's implemented.
 {
+    public Engine(){}
 }
